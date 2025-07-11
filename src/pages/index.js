@@ -9,6 +9,7 @@ import HotOffers from './components/HotOffers'
 import Testimonial from './components/Testimonial'
 import OurMembers from './components/OurMembers'
 import OurBlog from './components/OurBlog'
+import Footer from './components/layout/Footer'
 
 const index = () => {
   return (
@@ -23,6 +24,7 @@ const index = () => {
       <Testimonial />
       <OurMembers />
       <OurBlog />
+      <Footer/>
     </div>
   )
 }
