@@ -1,7 +1,7 @@
 import React from 'react'
-import { FooterData } from '../mockdata/FooterData'
+import { FooterData } from '@/mockdata/FooterData'
 import Image from 'next/image'
-import logo from '../../../public/assets/images/logo.png'
+import logo from '../../../public/assets/images/footerLogo.png'
 import post from '../../../public/assets/images/recent_blog.jpg'
 
 const Footer = () => {

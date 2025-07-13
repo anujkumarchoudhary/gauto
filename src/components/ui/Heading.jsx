@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import download from '../../../../public/assets/images/download.png'
+import download from '../../../public/assets/images/download.png'
 
 const data = ["We are a trusted name", "have a larger stock of vehicles", "we deal in have all brands", "we are at worldwide locations"]
 const Heading = ({label, name, description,isCheckPoint,isSignature}) => {

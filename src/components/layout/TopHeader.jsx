@@ -1,9 +1,9 @@
 // components/Header.js
 import React from 'react';
 import Icons from '../ui/Icons';
-import { HeaderData } from '../mockdata/HeaderData';
+import { HeaderData } from '@/mockdata/HeaderData';
 import ImageRenderer from '../ui/ImageRenderer';
-const Header = () => {
+const TopHeader = () => {
   return (
     <div>
       <div className="flex justify-between px-[5%] py-2 bg-[#020202] text-white text-sm">
@@ -48,4 +48,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default TopHeader;

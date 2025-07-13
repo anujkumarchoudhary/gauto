@@ -1,9 +1,9 @@
 import React from 'react'
 import Heading from './ui/Heading'
-import { OurBlogData } from './mockdata/OurBlogData'
 import Image from 'next/image'
-import blog from '../../../public/assets/images/blog.jpg'
+import blog from '../../public/assets/images/blog.jpg'
 import Icons from './ui/Icons'
+import { OurBlogData } from '@/mockdata/OurBlogData'
 
 const OurBlog = () => {
     return (

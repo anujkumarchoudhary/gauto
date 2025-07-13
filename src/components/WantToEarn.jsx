@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageRenderer from './ui/ImageRenderer'
-import image22 from '../../../public/assets/images/WantToEarn.png'
+import image22 from '../../public/assets/images/about.1044506a3d3cb06c91b2.png'
 import Image from 'next/image'
 import Button from './ui/Button'
 const WantToEarn = () => {

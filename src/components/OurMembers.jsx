@@ -1,8 +1,8 @@
 import React from 'react'
 import Heading from './ui/Heading'
-import { OurMembersData } from './mockdata/OurMembersData'
 import Image from 'next/image'
-import sherry from '../../../public/assets/images/john.jpg'
+import sherry from '../../public/assets/images/sherry.jpg'
+import { OurMembersData } from '@/mockdata/OurMembersData'
 
 const OurMembers = () => {
     return (

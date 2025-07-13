@@ -1,10 +1,11 @@
 import React from 'react'
 import Heading from './ui/Heading'
-import { HotOffersData } from './mockdata/HotOffersData'
 import Icons from './ui/Icons'
 import Image from 'next/image'
-import car from '../../../public/assets/images/nissan.png'
+import car from '../../public/assets/images/nissan.png'
 import SaleAndPurchaseButton from './ui/SaleAndPurchaseButton'
+import { HotOffersData } from '@/mockdata/HotOffersData'
+
 const HotOffers = () => {
     return (
         <div className='px-[5%] py-[4rem]'>

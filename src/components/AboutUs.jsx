@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from './ui/Heading'
 import Image from 'next/image'
-import about from '../../../public/assets/images/about.1044506a3d3cb06c91b2.png'
+import about from '../../public/assets/images/about.1044506a3d3cb06c91b2.png'
 
 const AboutUs = () => {
   return (

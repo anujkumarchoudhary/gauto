@@ -1,6 +1,6 @@
 // components/Icons.js
 import React from 'react';
-import { MdPhone, MdOutlineShoppingCart,MdSettings    } from "react-icons/md";
+import { MdPhone, MdOutlineShoppingCart,MdSettings,MdHome,MdKeyboardArrowRight      } from "react-icons/md";
 import { FaUser, FaGlobe, FaSignInAlt,FaCar } from "react-icons/fa";
 import { IoSearch,IoSpeedometerSharp,IoEyeSharp   } from "react-icons/io5";
 import { IoIosChatboxes } from "react-icons/io";
@@ -16,7 +16,9 @@ const iconMap = {
   setting:MdSettings ,
   meter:IoSpeedometerSharp ,
   view:IoEyeSharp ,
-  chat:IoIosChatboxes
+  chat:IoIosChatboxes,
+  home:MdHome ,
+  arrowRight:MdKeyboardArrowRight 
 
 };
 

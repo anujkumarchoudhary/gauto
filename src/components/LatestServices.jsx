@@ -1,9 +1,8 @@
 import React from 'react'
 import Heading from './ui/Heading'
-import { LatestServicesData } from './mockdata/LatestServicesData'
 import ImageRenderer from './ui/ImageRenderer'
+import { LatestServicesData } from '@/mockdata/LatestServicesData'
 
-console.log(LatestServicesData, "LatestServicesData>>>>")
 const LatestServices = () => {
   return (
     <div className='bg-[#FBFBFD] px-[5%] py-[3rem]'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderData } from '@/pages/components/mockdata/HeaderData'
+import { HeaderData } from '@/mockdata/HeaderData'
 import Icons from '../ui/Icons'
 import SearchBox from '../ui/SearchBox'
 const Header = () => {

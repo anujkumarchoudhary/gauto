@@ -1,6 +1,6 @@
 import Header from '@/components/layout/Header'
 import React from 'react'
-import TopHeader from './components/layout/TopHeader'
+import TopHeader from '@/components/layout/TopHeader'
 import Footer from '@/components/layout/Footer'
 
 const Layout = ({ children }) => {

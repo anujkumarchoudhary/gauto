@@ -1,8 +1,8 @@
 import React from 'react'
-import { TestimonialData } from '@/pages/components/mockdata/TestimonialData'
-import Heading from '@/pages/components/ui/Heading'
 import Image from 'next/image'
-import sherry from "../../../public/assets/images/sherry.jpg"
+import sherry from "../../public/assets/images/sherry.jpg"
+import Heading from './ui/Heading'
+import { TestimonialData } from '@/mockdata/TestimonialData'
 const Testimonial = () => {
   return (
     <div className='bg-[#080707] text-white px-[5%] py-[4rem]'>
