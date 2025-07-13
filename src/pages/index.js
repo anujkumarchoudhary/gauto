@@ -10,21 +10,20 @@ import Testimonial from './components/Testimonial'
 import OurMembers from './components/OurMembers'
 import OurBlog from './components/OurBlog'
 import Footer from './components/layout/Footer'
+import Layout from './layout'
 
 const index = () => {
   return (
     <div className=''>
-      <TopHeader />
-      <Header />
-      <Banner />
-      <AboutUs />
-      <LatestServices />
-      <WantToEarn />
-      <HotOffers />
-      <Testimonial />
-      <OurMembers />
-      <OurBlog />
-      <Footer/>
+        <Banner />
+        <AboutUs />
+        <LatestServices />
+        <WantToEarn />
+        <HotOffers />
+        <Testimonial />
+        <OurMembers />
+        <OurBlog />
+        <Footer />
     </div>
   )
 }

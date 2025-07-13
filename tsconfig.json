@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -13,19 +17,31 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-
     // ✅ Add this:
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
-    }
+      "@/*": [
+        "*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "next-env.d.ts",
+    "src/pages/components/Banner.jsx",
+    "src/pages/components/Testimonial.jsx",
+    "src/pages/components/layout/Header.jsx",
+    "src/pages/components/ui/Button.jsx",
     "src/pages/components/ui/Icons.jsx",
-    "src/pages/components/layout/Header.jsx"
-, "src/pages/components/ui/Button.jsx", "src/pages/components/Banner.jsx", "src/pages/components/Testimonial.jsx"  ],
-  "exclude": ["node_modules"]
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
