@@ -3,13 +3,13 @@ import React from 'react'
 import download from '../../../public/assets/images/download.png'
 
 const data = ["We are a trusted name", "have a larger stock of vehicles", "we deal in have all brands", "we are at worldwide locations"]
-const Heading = ({label, name, description,isCheckPoint,isSignature}) => {
+const Heading = ({ label, name, description, isCheckPoint, isSignature }) => {
   return (
     <div>
       <p className='text-lg font-bold text-[#E3382A]'>{label}</p>
-      <p className='text-4xl font-bold leading-15'>{name}</p>
-      <p>{description}</p>
-     {isCheckPoint &&  <div className='grid grid-cols-2 py-4'>
+      <p className='text-4xl font-bold leading-11 py-4'>{name}</p>
+      <p className='leading-6'>{description}</p>
+      {isCheckPoint && <div className='grid grid-cols-2 py-4'>
         {data?.map((item) => {
           return (
             <div className='flex gap-2 py-1'>
