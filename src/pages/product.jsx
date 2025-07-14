@@ -2,6 +2,7 @@ import CommonBanner from '@/components/CommonBanner'
 import BrandTab from '@/components/ui/BrandTab'
 import ProductCard from '@/components/ui/ProductCard'
 import SearchBox from '@/components/ui/SearchBox'
+import TopSelling from '@/components/ui/TopSelling'
 import React from 'react'
 const data = [
     {
@@ -76,6 +77,7 @@ const Product = () => {
                 <div className='space-y-4' >
                     <SearchBox isLightMode={true} />
                     <BrandTab isHeading={true} data={data} />
+                    <TopSelling/>
                 </div>
                 <div className='col-span-2'>
                     <div className='grid grid-cols-3 gap-5'>
