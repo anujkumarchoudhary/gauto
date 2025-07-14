@@ -1,11 +1,11 @@
 import React from 'react'
 import Icons from './Icons'
 
-const SearchBox = () => {
+const SearchBox = ({isLightMode}) => {
   return (
-    <div className='bg-[#1A1A1A] px-4 py-2 rounded-full flex'>
+    <div className={`${isLightMode ? "relative bg-[#F4F4F5]":"bg-[#1A1A1A]"} px-4 py-2 rounded-full flex`}>
       <input placeholder='Search' className='outline-none'/>
-      <Icons size={25} name={"search"} className='my-auto pl-2'/>
+      <Icons size={25} name={"search"} className='absolute top-0% right-3 my-auto pl-2'/>
     </div>
   )
 }
