@@ -2,14 +2,17 @@ import React from 'react'
 import { HeaderData } from '@/mockdata/HeaderData'
 import Icons from '../ui/Icons'
 import SearchBox from '../ui/SearchBox'
+import { Router } from 'next/router'
+import { useRouter } from 'next/navigation'
 const Header = () => {
+  const router = useRouter()
   console.log(HeaderData?.menuList, "HeaderData>>>")
   return (
     <div className='flex justify-between bg-[#020202] px-[5%] py-3 text-white'>
       <div className='flex gap-6 my-auto'>
         {HeaderData?.menuList?.map((item) => {
           return (
-            <p className='cursor-pointer'>{item.label}</p>
+            <p onClick={() => router.push(item.path)} className='cursor-pointer'>{item.label}</p>
           )
         })}
       </div>

@@ -15,13 +15,37 @@ export const HeaderData = {
     { icon: "phone", name: "Request a call" }
   ],
   menuList: [
-    { label: "Home" },
-    { label: "About" },
-    { label: "Service" },
-    { label: "Cars" },
-    { label: "Gallery" },
-    { label: "Shop" },
-    { label: "Pages" },
-    { label: "Contact" }
+    {
+      label: "Home",
+      path: "/"
+    },
+    {
+      label: "About",
+      path: "/about"
+    },
+    {
+      label: "Service",
+      path: "/service"
+    },
+    {
+      label: "Cars",
+      path: "/cars"
+    },
+    {
+      label: "Gallery",
+      path: "/gallery"
+    },
+    {
+      label: "Shop",
+      path: "/shop"
+    },
+    {
+      label: "Blog",
+      path: "/blog"
+    },
+    {
+      label: "Contact",
+      path: "/contact"
+    }
   ]
 };

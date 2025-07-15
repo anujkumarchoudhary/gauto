@@ -1,9 +1,12 @@
 // components/Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import Icons from '../ui/Icons';
 import { HeaderData } from '@/mockdata/HeaderData';
 import ImageRenderer from '../ui/ImageRenderer';
+import Register from '../ui/form/Register';
 const TopHeader = () => {
+  const [openRegister, setOpenRegister] = useState(null)
+  console.log(openRegister, "openRegister")
   return (
     <div>
       <div className="flex justify-between px-[5%] py-2 bg-[#020202] text-white text-sm">
@@ -17,10 +20,19 @@ const TopHeader = () => {
         </div>
         <div className="flex gap-6">
           {HeaderData.rightSide.map((item, i) => (
-            <div key={i} className="flex items-center gap-2">
+            <div
+              key={i}
+              onClick={() => {
+                if (item?.label === "Register" || item?.label === "Login") {
+                  setOpenRegister(item?.label === "Register" ? "register" : "login");
+                }
+              }}
+              className="flex items-center gap-2 cursor-pointer"
+            >
               {item.icon && <Icons name={item.icon} />}
               <span>{item.label}</span>
             </div>
+
           ))}
         </div>
       </div>
@@ -44,6 +56,7 @@ const TopHeader = () => {
           </div>
         </div>))}
       </div>
+      {openRegister && <Register isRegister={openRegister} handleClick={() => setOpenRegister(false)} />}
     </div>
   );
 };
