@@ -4,9 +4,12 @@ import Icons from '../ui/Icons';
 import { HeaderData } from '@/mockdata/HeaderData';
 import ImageRenderer from '../ui/ImageRenderer';
 import Register from '../ui/form/Register';
+import { useDispatch } from 'react-redux';
 const TopHeader = () => {
+  const dispatch = useDispatch()
   const [openRegister, setOpenRegister] = useState(null)
   console.log(openRegister, "openRegister")
+
   return (
     <div>
       <div className="flex justify-between px-[5%] py-2 bg-[#020202] text-white text-sm">
@@ -56,7 +59,7 @@ const TopHeader = () => {
           </div>
         </div>))}
       </div>
-      {openRegister && <Register isRegister={openRegister} handleClick={() => setOpenRegister(false)} />}
+      {openRegister && <Register isRegister={openRegister} handleClose={() => setOpenRegister(false)} />}
     </div>
   );
 };
