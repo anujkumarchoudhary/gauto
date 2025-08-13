@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from './ui/Heading'
 import Icons from './ui/Icons'
+
 import Image from 'next/image'
 import car from '../../public/assets/images/nissan.png'
 import SaleAndPurchaseButton from './ui/SaleAndPurchaseButton'
