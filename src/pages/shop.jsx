@@ -72,7 +72,7 @@ const cardData = [
 const Product = () => {
     return (
         <div>
-            <CommonBanner />
+            <CommonBanner title={"Shop"} name={"shop"}  />
             <div className='grid grid-cols-3 gap-5 px-[5%] py-[4rem]' >
                 <div className='space-y-4' >
                     <SearchBox isLightMode={true} />

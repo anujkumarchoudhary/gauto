@@ -5,7 +5,7 @@ import React from 'react'
 const ShoppingCart = () => {
     return (
         <div >
-            <CommonBanner />
+            <CommonBanner title={"Shopping Cart"} name={"shopping cart"}  />
             <ShoppingCartSection />
         </div>
     )

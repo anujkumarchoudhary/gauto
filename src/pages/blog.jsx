@@ -56,7 +56,7 @@ const tags = ["Apartment", "Garage", "Condo", "Villa", "Bungalow", "Garage", "Vi
 const Blog = () => {
     return (
         <div>
-            <CommonBanner />
+            <CommonBanner title={"Blog"} name={"blog"} />
             <div className='grid grid-cols-5 gap-5 px-[5%] py-[4rem]'>
                 <div className='col-span-3 space-y-6'>
                     {data?.map((item) => {

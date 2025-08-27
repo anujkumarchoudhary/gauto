@@ -7,9 +7,8 @@ import React from 'react'
 const Service = () => {
     return (
         <div >
-            <CommonBanner />
+            <CommonBanner title={"Service"} name={"service"} />
             <LatestServices/>
-
         </div>
     )
 }

@@ -5,7 +5,7 @@ import React from 'react'
 const Gallery = () => {
     return (
         <div>
-            <CommonBanner />
+            <CommonBanner title={"Gallery"} name={"gallery"} />
             <GallerySection />
         </div>
     )

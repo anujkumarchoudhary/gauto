@@ -6,7 +6,7 @@ import React from 'react'
 const ProductDetails = () => {
   return (
     <div>
-      <CommonBanner/>
+      <CommonBanner title={"Product Details"} name={"product details"}/>
       <ProductDetailsSection/>
       <RelatedProducts/>
     </div>

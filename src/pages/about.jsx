@@ -8,7 +8,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <CommonBanner/>
+      <CommonBanner title={"About"} name={"about"}/>
       <AboutUs/>
       <RentCar/>
       <WantToEarn/>
