@@ -12,11 +12,11 @@ const Heading = ({isStyleLabel,  label, name, isPrice, price, isDetails, details
       {isPrice && <p className='text-lg font-bold pb-2'>{price} <span className='text-[#EC3323]'>/ Day</span></p>
       }
       <p className='leading-6'>{description}</p>
-      {isCheckPoint && <div className='grid grid-cols-2 py-4'>
+      {isCheckPoint && <div className='grid grid-cols-1 md:grid-cols-2 py-4'>
         {data?.map((item) => {
           return (
             <div className='flex gap-2 py-1'>
-              <input type='checkbox' />
+              <input type='checkbox' checked={true} />
               <p>{item}</p>
             </div>
           )
@@ -25,7 +25,7 @@ const Heading = ({isStyleLabel,  label, name, isPrice, price, isDetails, details
       {isSignature && <div className='flex gap-4'>
         <div className='border-r-2 border-r-gray-200 pr-2'><Image src={download} width={160} height={160} alt='gy' /></div>
         <div>
-          <p>Robertho Garcia</p>
+          <p className='font-bold'>Robertho Garcia</p>
           <p>resident</p>
         </div>
       </div>}

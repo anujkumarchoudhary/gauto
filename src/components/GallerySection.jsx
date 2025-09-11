@@ -10,7 +10,7 @@ const GallerySection = () => {
     const images = [img_1, img_2, img_3, img_4, img_1, img_2]
     return (
         <div className='px-[5%] py-[4rem]'>
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-5'>
                 {images?.map((item) => {
                     return (
                         <Image src={item} width={"100%"} height={"100%"} alt='image' />

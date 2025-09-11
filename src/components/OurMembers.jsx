@@ -8,7 +8,7 @@ const OurMembers = () => {
     return (
         <div className='px-[5%] my-[4rem]'>
             <Heading label={"Expert"} name={"our Members"} />
-            <div className='grid grid-cols-4 gap-4 mt-[2rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mt-[2rem]'>
                 {OurMembersData?.map((item) => {
                     return (
                         <div className='shadow'>

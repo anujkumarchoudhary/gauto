@@ -57,7 +57,7 @@ const Blog = () => {
     return (
         <div>
             <CommonBanner title={"Blog"} name={"blog"} />
-            <div className='grid grid-cols-5 gap-5 px-[5%] py-[4rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-5 gap-5 px-[5%] py-[4rem]'>
                 <div className='col-span-3 space-y-6'>
                     {data?.map((item) => {
                         return (
@@ -65,6 +65,7 @@ const Blog = () => {
                                 <BlogCard img={item?.image} heading={item?.heading} description={item?.description} />
                             </div>
                         )
+
                     })}
                 </div>
                 <div className='col-span-2 space-y-6'>

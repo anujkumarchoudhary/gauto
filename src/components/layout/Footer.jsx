@@ -9,8 +9,8 @@ const Footer = () => {
     const { links } = FooterData?.quickLink
 
     return (
-        <div className='px-[5%] flex justify-between py-[4rem] text-white bg-[#000000]'>
-            <div className='w-[32%]'>
+        <div className='px-[5%] block md:flex justify-start md:justify-between py-[4rem] text-white bg-[#000000]'>
+            <div className='w-[100%] md:w-[32%]'>
                 <Image src={logo} width={200} height={200} />
                 <p className='mt-[1.5rem]'>{desc}</p>
                 <p className='text-lg font-bold my-3 border-b-2 border-b-[#EC3323] w-fit'>Head office</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <p>Office Time{headOffice?.OfficeTime}</p>
                 </div>
             </div>
-            <div className='w-[32%]' >
+            <div className='w-[100%] md:w-[32%]' >
                 <p className='text-lg font-bold my-3 border-b-2 border-b-[#EC3323] w-fit'>Head office</p>
                 <div className='grid grid-cols-2 mt-[1.5rem]'>
                     {links?.map((item) => {
@@ -29,7 +29,7 @@ const Footer = () => {
                     })}
                 </div>
             </div>
-            <div className='w-[32%]'>
+            <div className='w-[100%] md:w-[32%]'>
                 <p className='text-lg font-bold my-3 border-b-2 border-b-[#EC3323] w-fit'>Head office</p>
                 <div className='mt-[1.5rem]'>
                     {FooterData?.recentPost?.map((item) => {

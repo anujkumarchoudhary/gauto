@@ -73,14 +73,14 @@ const Product = () => {
     return (
         <div>
             <CommonBanner title={"Shop"} name={"shop"}  />
-            <div className='grid grid-cols-3 gap-5 px-[5%] py-[4rem]' >
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 px-[5%] py-[4rem]' >
                 <div className='space-y-4' >
                     <SearchBox isLightMode={true} />
                     <BrandTab isHeading={true} data={data} />
                     <TopSelling/>
                 </div>
                 <div className='col-span-2'>
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                         {cardData?.map((item) => {
                             return (
                                 <div>

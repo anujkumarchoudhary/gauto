@@ -9,7 +9,7 @@ const OurBlog = () => {
     return (
         <div className='px-[5%] py-[4rem] bg-slate-50'>
             <Heading label={"Latest"} name={"our blog"} />
-            <div className='grid grid-cols-3 gap-5 mt-[2rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-[2rem]'>
                 {OurBlogData?.map((item) => {
                     return (
                         <div className='shadow'>

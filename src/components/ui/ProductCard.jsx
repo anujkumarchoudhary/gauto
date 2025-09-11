@@ -5,7 +5,7 @@ import Icons from './Icons'
 
 const ProductCard = ({ name, price, icon }) => {
     return (
-        <div>
+        <div className=''>
             <Image src={productImg} width={"100%"} height={"100%"} alt='koe' />
             <div className='flex justify-between py-[1rem]'>
                 <di>

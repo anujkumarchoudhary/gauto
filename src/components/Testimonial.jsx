@@ -7,7 +7,7 @@ const Testimonial = () => {
   return (
     <div className='bg-[#080707] text-white px-[5%] py-[4rem]'>
       <Heading label={"Some words"} name={"Testimonial"} />
-      <div className='grid grid-cols-3 gap-5 mt-[2rem]'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-[2rem]'>
         {TestimonialData?.map((item) => {
           return (
             <div className='bg-white text-black p-[2rem] bg-'>
@@ -21,6 +21,7 @@ const Testimonial = () => {
             </div>
           )
         })}
+        
       </div>
     </div>
   )
