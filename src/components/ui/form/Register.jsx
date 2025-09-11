@@ -37,7 +37,7 @@ const Register = ({ handleClose, isRegister }) => {
     return (
         <div className="fixed inset-0 bg-black/60 bg-opacity-50 flex items-center justify-center z-10">
             {/* Modal Content */}
-            <div className="relative bg-white space-y-4 p-10 rounded-lg shadow-lg w-1/2 max-w-md text-center">
+            <div className="relative bg-white space-y-4 p-10 rounded-lg shadow-lg w-[90%] md:w-1/2 max-w-md text-center">
                 <p className='text-2xl font-bold'>{isRegister === "register" ? "Sign Up" : "Login"}</p>
                 <Icons name={"close"} handleClick={handleClose} color='#D42E1F' className='absolute top-4 right-4 cursor-pointer' />
                 {isRegister === "register" && <InputField name={"name"} value={inputVal.name} handleChange={handleChange} placeholder={"Name"} />}
