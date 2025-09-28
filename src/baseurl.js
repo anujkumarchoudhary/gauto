@@ -1,0 +1,1 @@
+export const baseUrl = "https://gauto-backend-qot7.vercel.app/api"
