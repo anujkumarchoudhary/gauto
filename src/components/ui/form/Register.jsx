@@ -7,6 +7,7 @@ import { loginUser, registerUser, setUser } from "@/redux/slices/userSlice";
 import { toast } from "react-toastify";
 import { setGlobalData } from "@/redux/slices/globalSlice";
 import axios from "axios";
+import { baseUrl } from "@/baseurl";
 
 const Register = ({ handleClose, isRegister }) => {
   const [inputVal, setInputVal] = useState({
@@ -27,10 +28,7 @@ const Register = ({ handleClose, isRegister }) => {
 
   const handleSignUp = async () => {
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/user/signup",
-        inputVal
-      );
+      const res = await axios.post(`${baseUrl}/user/signup`, inputVal);
       if (res.status === 201) {
         toast.success(res.data.message);
         handleClose();
@@ -44,10 +42,7 @@ const Register = ({ handleClose, isRegister }) => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/user/login",
-        inputVal
-      );
+      const res = await axios.post(`${baseUrl}/user/login`, inputVal);
       const { token } = res.data;
       localStorage.setItem("token", token);
 
